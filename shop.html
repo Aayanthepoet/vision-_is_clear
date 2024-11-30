@@ -6,56 +6,160 @@
   <title>Shop - Aayan Spencer's Poetry World</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .nav-link {
-      padding: 0.5rem; /* Reduced padding for tighter link spacing */
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .product-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .product-card img {
+      max-height: 200px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+    .product-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 1rem;
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+    .buy-btn {
+      font-size: 0.9rem;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+    }
+    footer p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="bg-dark text-white p-3">
-    <nav class="container d-flex justify-content-center">
-      <a href="index.html" class="nav-link text-white">Home</a>
-      <a href="shop.html" class="nav-link text-white">Shop</a>
-      <a href="donation.html" class="nav-link text-white">Donate</a>
-      <a href="spoken-word.html" class="nav-link text-white">Spoken Word</a>
-      <a href="events.html" class="nav-link text-white">Events</a>
-      <a href="podcast.html" class="nav-link text-white">Podcast</a>
-      <a href="booking.html" class="nav-link text-white">Book Now</a>
-      <a href="contact.html" class="nav-link text-white">Contact</a>
+  <header class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Poetry World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-link text-white">Home</a>
+            <a href="shop.html" class="nav-link text-white active">Shop</a>
+            <a href="about.html" class="nav-link text-white">about</a>
+            <a href="donation.html" class="nav-link text-white">Donate</a>
+            <a href="spoken-word.html" class="nav-link text-white">Spoken Word</a>
+            <a href="events.html" class="nav-link text-white">Events</a>
+            <a href="podcast.html" class="nav-link text-white">Podcast</a>
+            <a href="booking.html" class="nav-link text-white">Book Now</a>
+            <a href="contact.html" class="nav-link text-white">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main class="container mt-5">
     <h1 class="text-center">Shop Our Collection</h1>
-    <p class="text-center">Explore our curated products including poetry books and exclusive merchandise.</p>
-    <div class="row mt-4">
+    <p class="text-center">Explore our curated products including poetry books, exclusive merchandise, and more.</p>
+    <div class="row mt-4 g-4">
       <!-- Product 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3">
         <div class="product-card">
-          <img src="images/book1.jpg" alt="Poetry Book 1" class="img-fluid">
+          <img src="images/book1.jpg" alt="Poetry Book Vol. 1" class="img-fluid">
           <div class="product-name">Poetry Book Vol. 1</div>
           <div class="product-price">$19.99</div>
-          <a href="#" class="buy-btn btn btn-primary">Add to Cart</a>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
         </div>
       </div>
+
       <!-- Product 2 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3">
         <div class="product-card">
-          <img src="images/merch1.jpg" alt="Merchandise 1" class="img-fluid">
+          <img src="images/merch1.jpg" alt="Exclusive T-shirt" class="img-fluid">
           <div class="product-name">Exclusive T-shirt</div>
           <div class="product-price">$24.99</div>
-          <a href="#" class="buy-btn btn btn-primary">Add to Cart</a>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
         </div>
       </div>
+
       <!-- Product 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3">
         <div class="product-card">
-          <img src="images/book2.jpg" alt="Poetry Book 2" class="img-fluid">
+          <img src="images/book2.jpg" alt="Poetry Book Vol. 2" class="img-fluid">
           <div class="product-name">Poetry Book Vol. 2</div>
           <div class="product-price">$21.99</div>
-          <a href="#" class="buy-btn btn btn-primary">Add to Cart</a>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="images/mug1.jpg" alt="Poetry Mug" class="img-fluid">
+          <div class="product-name">Poetry Mug</div>
+          <div class="product-price">$14.99</div>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="images/poster1.jpg" alt="Poetry Poster" class="img-fluid">
+          <div class="product-name">Poetry Poster</div>
+          <div class="product-price">$12.99</div>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="images/book3.jpg" alt="Poetry Book Vol. 3" class="img-fluid">
+          <div class="product-name">Poetry Book Vol. 3</div>
+          <div class="product-price">$22.99</div>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="images/candle1.jpg" alt="Poetry Candle" class="img-fluid">
+          <div class="product-name">Poetry Candle</div>
+          <div class="product-price">$18.99</div>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="images/notebook1.jpg" alt="Poetry Notebook" class="img-fluid">
+          <div class="product-name">Poetry Notebook</div>
+          <div class="product-price">$9.99</div>
+          <a href="#" class="buy-btn btn btn-primary w-100">Add to Cart</a>
         </div>
       </div>
     </div>
